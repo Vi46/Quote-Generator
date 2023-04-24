@@ -1,0 +1,70 @@
+
+
+body{
+    background-image: url("https://i.pinimg.com/originals/74/54/a6/7454a66e20726667148a3fa24b057912.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#quote-container{
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top:250px;
+        text-align: center;
+        padding: 20px;
+  }
+
+.background-quote{
+    background-color: whitesmoke;
+    max-width: 600px;
+    border-radius: 50px;
+    border: groove;
+}
+/* Button */
+button {
+    margin: 2em auto;
+    display: block;
+    appearance: none;
+    border: 6px solid rgba(255,255,255,0.45);
+    border-radius: 50px;
+    padding: 1em 3em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip: padding-box;
+    position: relative;
+    color: #FFF;
+  }
+  button:before {
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50px;
+    z-index: -1;
+    filter: blur(14px);
+  }
+  button:after {
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50px;
+    z-index: -1;
+    filter: blur(14px);
+  }
+#new-quote {
+    background-image: linear-gradient(90deg, #525a69, #898dda);
+    cursor: pointer;
+  }
+
+#new-quote:before {
+    background-image: linear-gradient(90deg, #525a69, transparent);
+}
+
+#new-quote:after {
+    background-image: linear-gradient(90deg, transparent, #898dda);
+  }
